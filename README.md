@@ -14,3 +14,13 @@ To make the source code compatible with your wiring setup, change the function
 `querySwitches()` so that the input from the switches is read correctly. 
 
 The wiring for the LCD is exactly like in [this tutorial](https://www.arduino.cc/en/Tutorial/HelloWorld)
+
+To compile the code and upload it to your arduino: 
+```
+mkdir build 
+cd build 
+cmake .. 
+make upload
+```
+
+You might have to change the `PORT` variable in your CMakeLists.txt so that avrdude uses the correct port. 
